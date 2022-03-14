@@ -8,87 +8,10 @@
       </h4>
     </div>
     <div class="container card">
-      <div class="card">
+      <div class="card" v-for="item in data" :key="item">
         <div class="card__wrapper">
           <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__wrapper">
-          <a href="#">
-            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" :src="item.imageUrl" alt="">
           </a>
         </div>
       </div>
@@ -151,7 +74,44 @@
 export default {
   data () {
     return {
-      data: []
+      data: [
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        },
+        {
+          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+        }
+      ]
     }
   }
 }
