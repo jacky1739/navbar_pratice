@@ -1,23 +1,28 @@
 <template>
   <nav class="nav">
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <span class="material-icons">
-        reorder
-      </span>
-    </label>
-    <label class="logo">DesignX</label>
-    <ul class="list__group">
-      <li class="list__group__item"><a class="list__group__link" href="#">Home</a></li>
-      <li class="list__group__item"><a class="list__group__link" href="#">About</a></li>
-      <li class="list__group__item"><a class="list__group__link" href="#">Serivces</a></li>
-      <li class="list__group__item"><a class="list__group__link" href="#">Contact</a></li>
-      <li class="list__group__item"><a class="list__group__link" href="#">Feedback</a></li>
-    </ul>
+    <div class="container">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <span class="material-icons">
+          reorder
+        </span>
+      </label>
+      <label class="logo">DesignX</label>
+      <ul class="list__group">
+        <li class="list__group__item"><a class="list__group__link" href="#">Home</a></li>
+        <li class="list__group__item"><a class="list__group__link" href="#">About</a></li>
+        <li class="list__group__item"><a class="list__group__link" href="#">Serivces</a></li>
+        <li class="list__group__item"><a class="list__group__link" href="#">Contact</a></li>
+        <li class="list__group__item"><a class="list__group__link" href="#">Feedback</a></li>
+      </ul>
+    </div>
   </nav>
 </template>
 
 <style lang="scss" scoped>
+  .container {
+    padding: 0 .3rem;
+  }
   .nav {
     background: #0082e6;
     height: .8rem;
@@ -27,7 +32,7 @@
       color: white;
       float: right;
       line-height: .8rem;
-      margin-right: .4rem;
+      // margin-right: .4rem;
       cursor: pointer;
       display: none;
       @media (max-width: 858px) {
@@ -44,16 +49,16 @@
       color: white;
       font-size: .35rem;
       line-height: .8rem;
-      padding: 0 0 0 1rem;
+      padding: 0 0 0 0;
       font-weight: bold;
       @media (max-width: 952px) {
         font-size: .3rem;
-        padding-left: .5rem;
+        // padding-left: .5rem;
       }
     }
     .list__group {
       float: right;
-      margin-right: .2rem;
+      // margin-right: .2rem;
       @media (max-width: 858px) {
         position: fixed;
         width: 100%;

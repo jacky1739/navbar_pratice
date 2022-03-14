@@ -7,8 +7,91 @@
         We strive to be on the top of the crowd's gaming experience.
       </h4>
     </div>
-    <div class="card">
-      <a href="#"><img src="" alt=""></a>
+    <div class="container card">
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="#">
+            <img src="../../assets/images/3000-90b0a485.png" alt="">
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -16,6 +99,9 @@
 <style lang="scss" scoped>
   .section {
     padding-top: .48rem;
+    background-image: url('../../assets/images/background16-3-1920x1263-c36d62b2.jpg');
+    height: 100vh;
+    width: 100%;
   }
   .title {
     font-weight: bold;
@@ -33,6 +119,25 @@
     text-align: center;
     font-size: .142rem;
     line-height: 1.6;
+    margin-bottom: .5rem;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .3rem;
+  }
+  .card__wrapper {
+    width: 2.08rem;
+    height: 1.59rem;
+    margin: 0 .16rem;
+    @media (max-width: 1200px) {
+      width: 2.18rem;
+    }
+    @media (max-width: 992px) {
+      width: 2.08rem;
+    }
   }
 </style>
 
