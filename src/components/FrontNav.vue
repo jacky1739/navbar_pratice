@@ -90,13 +90,13 @@
         }
         @media (max-width: 858px) {
           font-size: .2rem;
-          a.active, a:hover {
+          .list__group__link.active, .list__group__link:hover {
             background: none;
             color: #0082e6;
           }
         }
       }
-      a.active, a:hover {
+      .list__group__link.active, .list__group__link:hover {
         background: #1b9bff;
         transition: .5s;
       }

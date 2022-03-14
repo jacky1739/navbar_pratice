@@ -11,84 +11,84 @@
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
       <div class="card">
         <div class="card__wrapper">
           <a href="#">
-            <img src="../../assets/images/3000-90b0a485.png" alt="">
+            <img class="card__img" src="../../assets/images/3000-90b0a485.png" alt="">
           </a>
         </div>
       </div>
@@ -100,8 +100,10 @@
   .section {
     padding-top: .48rem;
     background-image: url('../../assets/images/background16-3-1920x1263-c36d62b2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
     height: 100vh;
-    width: 100%;
   }
   .title {
     font-weight: bold;
@@ -127,6 +129,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: .3rem;
+  }
+  .card__img:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.25s;
   }
   .card__wrapper {
     width: 2.08rem;
