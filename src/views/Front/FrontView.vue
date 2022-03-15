@@ -8,10 +8,11 @@
       </h4>
     </div>
     <div class="container card">
-      <div class="card" v-for="item in data" :key="item">
+      <div class="card" v-for="item in imageData" :key="item">
         <div class="card__wrapper">
           <a href="#">
-            <img class="card__img" :src="item.imageUrl" alt="">
+            <!-- <img class="card__img" :src="item.imageUrl" alt=""> -->
+            <img class="card__img" src="@/assets/images/3000.png" alt="">
           </a>
         </div>
       </div>
@@ -74,42 +75,42 @@
 export default {
   data () {
     return {
-      data: [
+      imageData: [
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '@/assets/images/3000.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '../../assets/images/3000.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '/img/3000-90b0a485.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '/img/3000-90b0a485.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '/img/3000-90b0a485.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '/img/3000-90b0a485.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '/img/3000-90b0a485.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '/img/3000-90b0a485.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '/img/3000-90b0a485.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '/img/3000-90b0a485.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '/img/3000-90b0a485.png'
         },
         {
-          imageUrl: '/img/3000-90b0a485.c5cd7923.png'
+          imageUrl: '/img/3000-90b0a485.png'
         }
       ]
     }
