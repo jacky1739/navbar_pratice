@@ -65,7 +65,7 @@
 
 <script>
 import useVuelidate from '@vuelidate/core'
-import { required } from '@vuelidate/validators'
+import { required, email, minLength, sameAs } from '@vuelidate/validators'
 
 export default {
   data () {
@@ -80,10 +80,10 @@ export default {
   },
   validations () {
     return {
-      email: { required },
+      email: { required, email },
       password: {
-        password: { required },
-        confirm: { required }
+        password: { required, minLength: minLength(6) },
+        confirm: { required, sameAs: sameAs(this.password.password) }
       }
     }
   },
