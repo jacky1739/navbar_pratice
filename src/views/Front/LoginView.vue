@@ -2,12 +2,15 @@
   <div class="wrapper">
     <img class="wrapper__img" src="http://www.dell-lee.com/imgs/vue3/user.png" alt="">
     <div class="wrapper__input">
-      <input class="wrapper__input__content" type="text" placeholder="請輸入手機號">
+      <input class="wrapper__input__content" type="text" v-model="email" placeholder="請輸入 Email">
     </div>
     <div class="wrapper__input">
-      <input class="wrapper__input__content" type="password" placeholder="請輸入密碼">
+      <input class="wrapper__input__content" type="password" v-model="password.password" placeholder="請輸入密碼">
     </div>
-    <div class="wrapper__login-button">登入</div>
+    <div class="wrapper__input">
+      <input class="wrapper__input__content" type="password" v-model="password.confirm" placeholder="確認密碼">
+    </div>
+    <div class="wrapper__login-button" @click.prevent="submitForm">登入</div>
     <div class="wrapper__login-button">立即註冊</div>
   </div>
 </template>
@@ -59,3 +62,40 @@
   }
 }
 </style>
+
+<script>
+import useVuelidate from '@vuelidate/core'
+import { required } from '@vuelidate/validators'
+
+export default {
+  data () {
+    return {
+      v$: useVuelidate(),
+      email: '',
+      password: {
+        password: '',
+        confirm: ''
+      }
+    }
+  },
+  validations () {
+    return {
+      email: { required },
+      password: {
+        password: { required },
+        confirm: { required }
+      }
+    }
+  },
+  methods: {
+    submitForm () {
+      this.v$.$validate()
+      if (!this.v$.$error) {
+        alert('Form successfully submitted.')
+      } else {
+        alert('Form failed submitted.')
+      }
+    }
+  }
+}
+</script>
