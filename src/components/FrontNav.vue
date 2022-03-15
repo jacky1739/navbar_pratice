@@ -24,7 +24,7 @@
     padding: 0 .3rem;
   }
   .nav {
-    background: #0082e6;
+    background: black;
     height: .8rem;
     width: 100%;
     .checkbtn {
