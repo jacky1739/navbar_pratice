@@ -9,7 +9,7 @@
       </label>
       <label class="logo">DesignX</label>
       <ul class="list__group">
-        <li class="list__group__item"><a class="list__group__link" href="#">Home</a></li>
+        <li class="list__group__item"><a class="list__group__link" href="#" @click.prevent="clickOn">Home</a></li>
         <li class="list__group__item"><a class="list__group__link" href="#">About</a></li>
         <li class="list__group__item"><a class="list__group__link" href="#">Serivces</a></li>
         <li class="list__group__item"><a class="list__group__link" href="#">Contact</a></li>
@@ -103,3 +103,16 @@
     }
   }
 </style>
+
+<script>
+import emitter from '@/assets/javascript/emitter'
+
+export default {
+  methods: {
+    clickOn () {
+      console.log('click children layer')
+      emitter.emit('click')
+    }
+  }
+}
+</script>
