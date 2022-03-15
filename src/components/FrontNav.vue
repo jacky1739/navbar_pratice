@@ -58,13 +58,11 @@
     }
     .list__group {
       float: right;
-      // margin-right: .2rem;
       @media (max-width: 858px) {
         position: fixed;
         width: 100%;
-        height: calc(100vh - .8rem);
+        height: 100vh;
         background: #2c3e50;
-        top: .8rem;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -111,7 +109,7 @@ export default {
   methods: {
     clickOn () {
       console.log('click children layer')
-      emitter.emit('click')
+      emitter.emit('click', 'message')
     }
   }
 }

@@ -13,13 +13,13 @@ export default ({
     FrontNav
   },
   methods: {
-    alert () {
-      console.log('click Father layer')
+    alert (item) {
+      console.log('click Father layer', item)
     }
   },
   mounted () {
-    emitter.on('click', () => {
-      this.alert()
+    emitter.on('click', (item) => {
+      this.alert(item)
     })
   }
 })
