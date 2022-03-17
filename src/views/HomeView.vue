@@ -1,5 +1,5 @@
 <template>
-  <FrontNav :click="alert"></FrontNav>
+  <FrontNav :userData="user" @click="alert"></FrontNav>
   <router-view />
 </template>
 
@@ -11,6 +11,14 @@ export default ({
   name: 'HomeView',
   components: {
     FrontNav
+  },
+  data () {
+    return {
+      user: {
+        name: 'jacky',
+        age: 20
+      }
+    }
   },
   methods: {
     alert (item) {

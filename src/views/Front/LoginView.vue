@@ -3,12 +3,27 @@
     <img class="wrapper__img" src="http://www.dell-lee.com/imgs/vue3/user.png" alt="">
     <div class="wrapper__input">
       <input class="wrapper__input__content" type="text" v-model="email" placeholder="請輸入 Email">
+      <div class="validate">
+        <span v-if="v$.email.$error">
+          {{ v$.email.$errors[0].$message }}
+        </span>
+      </div>
     </div>
     <div class="wrapper__input">
       <input class="wrapper__input__content" type="password" v-model="password.password" placeholder="請輸入密碼">
+      <div class="validate">
+        <span class="validate" v-if="v$.password.password.$error">
+          {{ v$.password.password.$errors[0].$message }}
+        </span>
+      </div>
     </div>
     <div class="wrapper__input">
       <input class="wrapper__input__content" type="password" v-model="password.confirm" placeholder="確認密碼">
+      <div class="validate">
+        <span class="validate" v-if="v$.password.confirm.$error">
+          {{ v$.password.confirm.$errors[0].$message }}
+        </span>
+      </div>
     </div>
     <div class="wrapper__login-button" @click.prevent="submitForm">登入</div>
     <div class="wrapper__login-button">立即註冊</div>
@@ -59,6 +74,10 @@
     border-radius: .04rem;
     border-radius: .04rem;
     color: #fff;
+  }
+  .validate {
+    text-align: center;
+    color: red;
   }
 }
 </style>

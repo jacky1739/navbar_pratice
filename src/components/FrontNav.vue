@@ -106,11 +106,15 @@
 import emitter from '@/assets/javascript/emitter'
 
 export default {
+  props: ['userData'],
   methods: {
     clickOn () {
       console.log('click children layer')
       emitter.emit('click', 'message')
     }
+  },
+  mounted () {
+    console.log(this.userData)
   }
 }
 </script>
